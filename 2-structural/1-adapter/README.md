@@ -1,4 +1,4 @@
-# Adapter / Wrapper
+# Adapter
 
 Allows the interface of an existing class to be used as another interface.
 
