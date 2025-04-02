@@ -2,6 +2,8 @@
 
 Allows the interface of an existing class to be used as another interface.
 
+Adapter is an interface for the only one interface/abstraction.
+
 Solves problems like:
 
 - How can a class be reused that does not have an interface that a client requires?

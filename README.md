@@ -20,4 +20,6 @@
 
 - Decorator
 
+- Facade
+
 ## 3. Behavioral
