@@ -1,5 +1,3 @@
-import assert from "assert"
-
 class Person {
     firstName: string
     lastName: string
@@ -7,6 +5,10 @@ class Person {
     constructor (firstName: string, lastName: string) {
         this.firstName = firstName
         this.lastName = lastName
+    }
+
+    async activate () {
+        // some actions
     }
 }
 
@@ -17,11 +19,23 @@ class PersonProxy {
         this.person = person
     }
 
-    get fullName () {
-        return `${this.person.firstName} ${this.person.lastName}`
+    async activate () {
+        if (this.checkAccess()) {
+            await this.person.activate()
+            this.logActivation()
+        }
+    }
+
+    private checkAccess () {
+        // some checks
+        return true
+    }
+
+    private logActivation () {
+        console.log(`User was activated`)
     }
 }
 
 const proxy = new PersonProxy(new Person('John', 'Smith'))
 
-assert.equal(proxy.fullName, 'John Smith')
+await proxy.activate()
