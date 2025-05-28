@@ -16,10 +16,24 @@
 
 - Adapter
 
-- Wrapper
+- Bridge
+
+- Composite
 
 - Decorator
 
 - Facade
 
+- Flyweight
+
+- Proxy
+
+- Wrapper
+
 ## 3. Behavioral
+
+- Chain of Responsibility
+
+- Command
+
+- Iterator
