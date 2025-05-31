@@ -17,7 +17,7 @@ D: russian doll
 F: simple interface for several complex interfaces
 FW:
 P: logging, security, lazy initialization, caching
-W: special case of Adapter or Wrapper
+W: special case of Adapter or Wrapper ?
 
 ## Behavioral: CoR, C, I, MD, MEM, O, ST, STR, T, V
 
@@ -28,6 +28,6 @@ MD:
 MEM:
 O:
 ST:
-STR:
+STR: common interface for several interchangeable algorithms, Context (Strategy)
 T:
 V:
