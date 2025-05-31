@@ -50,11 +50,11 @@ class Light extends Device {
 
 class AirConditioner extends Device {
   turnOn () {
-    this.sendCommand('')
+    this.sendCommand('ac.turn_on')
   }
 
   turnOff () {
-    this.sendCommand('')
+    this.sendCommand('ac.turn_off')
   }
 
   setTemperature (temp: number) {
