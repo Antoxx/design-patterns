@@ -26,7 +26,7 @@ C:
 I:
 MD:
 MEM:
-O:
+O: Observable (observers, subscribe, unsubscribe, notify) + Observer (update)
 ST:
 STR: common interface for several interchangeable algorithms, Context (Strategy)
 T:
